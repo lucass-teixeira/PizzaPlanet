@@ -11,6 +11,7 @@
             justify-content: space-between;
             align-items: center;
 
+            
             &-content {
                 max-width: 26rem;
                 font-size: 2rem;
@@ -64,4 +65,8 @@
 
     }
 
+}
+
+.container {
+    font-family: 'Nunito', sans-serif;
 }
