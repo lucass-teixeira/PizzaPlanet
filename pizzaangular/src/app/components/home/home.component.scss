@@ -1,0 +1,67 @@
+@import "../../../styles/mixin";
+@import "../../../styles/variables";
+
+.home {
+    &-header {
+        &-container {
+            @include container();
+            height: calc(100vh - $navheight);
+            padding: 3rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-content {
+                max-width: 26rem;
+                font-size: 2rem;
+                font-family: 'Nunito', sans-serif;
+                color: #272727;
+
+                span {
+                    font-family: 'Prompt', sans-serif;
+                    color: #d75e0f;
+                }
+
+                button {
+
+                    margin: 0 20px;
+                    border: none;
+
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    border-radius: 6px;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 1rem;
+                    color: white;
+
+                    @include box-shadow();
+
+                    &.btn-primary {
+                        background: linear-gradient(orange, #d75e0f);
+
+                    }
+
+                    &.btn-secondary {
+                        color: #272727;
+                    }
+                }
+
+            }
+
+            &-banner {
+                #banner {
+                    height: 20rem;
+                    
+                    &.rotate
+                    {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+
+    }
+
+}

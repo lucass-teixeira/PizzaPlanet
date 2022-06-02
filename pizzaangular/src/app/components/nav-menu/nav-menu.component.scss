@@ -1,0 +1,40 @@
+@import "../../../styles/mixin";
+@import "../../../styles/variables";
+
+.nav {
+    background-color: #efefef;
+    position: absolute;
+    width: 100% ;
+    &-container {
+        @include container();
+
+        display:  flex;
+        justify-content: space-between;
+        align-items: center;
+        height: $navheight;
+        &-logo {}
+
+        &-content {
+            ul {
+                display: grid;
+                grid-auto-flow: column;
+                grid-gap: 10px;
+                
+
+                li {
+                    list-style: none;
+
+                    a {
+                        font-family: 'Nunito', sans-serif;
+                        color: #272727;
+                        font-size: 1rem;
+
+                        // @include box-shadow();
+                    }
+                }
+            }
+
+        }
+    }
+
+}
