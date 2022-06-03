@@ -29,4 +29,5 @@ import { HTTPErrorsInterceptor } from './interceptors/http-errors.interceptors';
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
